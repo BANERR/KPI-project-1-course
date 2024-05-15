@@ -1,42 +1,41 @@
+//react
+import { Link } from 'react-router-dom'
+
 //Style
 import './header.css'
 
 //images
 import logo1 from '../../images/logo1.png'
-import bro from '../../images/bro.png'
 
-const Header = () => {
-  return (
-    <div className="header-wrapper">
-        <div className="header-navbar-container">
-            <img src={logo1} alt="logo1" className="header-navbar-logo"/>
+const Header = ({image, title, text, subtitle}) => {
 
-            <div className="header-navbar-tabs-container">
-                <div className="header-navbar-tab small-text">
-                    SRC
+    return (
+        <div className="header-wrapper">
+            <div className="header-navbar-container">
+                <img src={logo1} alt="logo1" className="header-navbar-logo"/>
+
+                <div className="header-navbar-tabs-container">
+                    <Link className="header-navbar-tab small-text" to={'/'}>SRC</Link>
+                    <Link className="header-navbar-tab small-text" to={'/socialEngineering'}>Соціальна Інженерія</Link>
+                    <Link className="header-navbar-tab small-text" to={'/loadTestingYourSite'}>Загружене тестування вошого сайту</Link>
                 </div>
-                <div className="header-navbar-tab small-text">
-                    Соціальна Інженерія
+                <div className="header-navbar-selector">Contact Us</div>
+            </div>
+            <div className="header-information-container">
+                <div className="header-information-data-container">
+                    {
+                        title ? <div className="header-information-data-title">{title}</div> : null
+                    }
+                    
+                    <div className="header-information-data-subtitle subtitle-text">{subtitle}</div>
+                    <div className="header-information-data-text small-text">{text}</div>
+                    <button className="header-information-button gradient-button small-text">ДЕТАЛЬНІШЕ</button>
                 </div>
-                <div className="header-navbar-tab small-text">
-                    Загружене тестування вошого сайту
-                </div>
+
+                <img src={image} alt="frame64" className="header-information-img"/>
             </div>
         </div>
-        <div className="header-information-container">
-            <div className="header-information-data-container">
-                <div className="header-information-data-title">SCR</div>
-                <div className="header-information-data-subtitle subtitle-text">Аналіз коду безпеки</div>
-                <div className="header-information-data-text small-text">У White Box пентестери CQR проводять детальне тестування на проникнення в кібербезпеку вашої системи.</div>
-                <button className="header-information-button gradient-button small-text">ДЕТАЛЬНІШЕ</button>
-            </div>
-
-            <img src={bro} alt="frame64" className="header-information-img"/>
-        </div>
-
-        <div className="style-element"></div>
-    </div>
-  )
+    )
 }
 
 export default Header;

@@ -19,7 +19,7 @@ const SupportArea = () => {
                     <input type="email" placeholder="E-mail" className="support-area-input"/>
                     <input type="tel" placeholder="Контактний телефон" className="support-area-input"/>
                     <input type="text" placeholder="Повідомлення" className="support-area-input"/>
-                    <button class="boxes-information-button gradient-button small-text">НАДІСЛАТИ</button>
+                    <button className="boxes-information-button gradient-button small-text">НАДІСЛАТИ</button>
                 </div>
             </div>
         </div>

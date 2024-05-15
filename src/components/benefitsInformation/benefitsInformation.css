@@ -1,0 +1,59 @@
+.benefits-information-wrapper{
+    position: relative;
+    padding: 6.9vw 5vw; 
+    display: flex;
+    flex-direction: column;
+    gap: 15vw;
+    overflow: hidden;
+}
+
+.benefits-information-container{
+    display: flex;
+    gap: 18vw;
+    align-items: center;
+}
+
+.benefits-information-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vw;
+    width: 36vw;
+}
+
+.benefits-information-text{
+    color: #888888;
+}
+
+.benefits-information-title{
+    color: #000;
+}
+
+.benefits-information-container-background-img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -20vw;
+    left: 0;
+}
+
+.benefits-information-container-background-vector{
+    position: absolute;
+    width: 36vw;
+    left: 32%;
+    top: 21vw;
+    height: auto;
+    z-index: 1;
+}
+
+.benefits-information-container-img{
+    width: 36vw;
+    height: auto;
+    z-index: 2;
+}
+
+.benefits-information-container-img-rafiki{
+    width: 44vw;
+    height: auto;
+    z-index: 2;
+}
