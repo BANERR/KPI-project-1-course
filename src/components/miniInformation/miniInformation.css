@@ -1,0 +1,97 @@
+.mini-information-wrapper{
+    display: flex;
+    padding: 3.7vw 15vw;
+    background: linear-gradient(to bottom, #DFF0FF, #F7F5FF);
+}
+
+.mini-information-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.mini-information-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 36.4vw;
+    height: 12.8vw;
+}
+
+.mini-information-text{
+    font-size: 1.25vw;
+    color: #888888;
+}
+
+.mini-information-title{
+    font-size: 2.5vw;
+    color: #000000;
+}
+
+.mini-information-buttons-container{
+    padding-top: 0.69vw;
+    display: flex;
+    justify-content: left;
+    gap: 1.4vw;
+}
+
+.mini-information-demo-button{
+    width: 11.8vw;
+    height: 3vw;
+}
+
+.mini-information-question-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6.94vw;
+    border: 1px solid #2DA4EE;
+    width: 11.8vw;
+    height: 3vw;
+    color: #2DA4EE;
+    background-color: transparent;
+}
+
+.mini-information-avatar-container{
+    position: relative;
+    width: 26.7vw;
+    height: 29.5vw;
+}
+
+.mini-information-style-box{
+    position: absolute;
+    width: 20.3vw;
+    height: 24.6vw;
+    background: linear-gradient(to right, #BCBCFFCC, #67D9FBCC);
+    z-index: 3;
+    top: 3.1vw;
+    left: 3.1vw;
+}
+
+.mini-information-style-box-background{
+    position: absolute;
+    width: 20.1vw;
+    height: 24.65vw;
+    background: #FFFFFF;
+    z-index: 2;
+    top: 3.1vw;
+    left: 3.1vw;
+}
+
+.mini-information-style-img{
+    position: absolute;
+    z-index: 1;
+    width: 42.5%;
+    height: auto;
+}
+
+.mini-information-avatar{
+    position: absolute;
+    z-index: 4;
+    top: 0.3vw;
+    left: 4.4vw;
+    width: 71%;
+    height: auto;
+}

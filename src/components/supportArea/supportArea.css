@@ -1,0 +1,71 @@
+.support-area-wrapper{
+    padding: 6.9vw 10.4vw;
+    position: relative;
+}
+
+.support-area-backgound{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.support-area-container{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.support-area-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 29.8vw;
+    gap: 1.4vw;
+}
+
+.support-area-subtitle{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 900;
+    line-height: 1.8vw;
+    text-align: center;
+    background: linear-gradient(47.69deg, #17EAD9 0%, #6078EA 100%);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+.support-area-title{
+    color: #000;
+}
+
+.support-area-text{
+    color: #888888;
+}
+
+.support-area-inputs-container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1.7vw;
+}
+
+.support-area-input{
+    width: 34vw;
+    border: none;
+    padding: 0 0 0.69vw 0;
+    outline: none;
+    font-size: 1.1vw;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    border-bottom: 2px solid #00000033;
+}
+
+.support-area-input::placeholder{
+    color: #000;
+    font-size: 0.75vw;
+}
