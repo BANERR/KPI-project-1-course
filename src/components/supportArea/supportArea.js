@@ -5,6 +5,43 @@ import './supportArea.css'
 import suportAreaBackgound from '../../images/suportAreaBackgound.png'
 
 const SupportArea = () => {
+
+    // const submitSupportArea = () => {
+    //     const data = 'hello'
+    //     fetch('http://127.0.0.1:5000/submit_support_area', {method: 'POST', body: JSON.stringify(data)})
+    //     .then((response)=>{
+    //         return response.json()
+    //     })
+    //     .then((data)=>{
+    //         console.log(data)
+    //     })
+        
+    // }
+
+    async function submitSupportArea(data) {
+        data = 'hello'
+        try {
+          const response = await fetch('http://127.0.0.1:5000/submit_support_area', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          });
+      
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+      
+          const result = await response.json();
+          console.log(result);
+        } catch (error) {
+          console.error('Error:', error);
+        }
+      }
+      
+
+
     return(
         <div className="support-area-wrapper">
             <img src={suportAreaBackgound} className="support-area-backgound" alt=""/>
@@ -19,7 +56,7 @@ const SupportArea = () => {
                     <input type="email" placeholder="E-mail" className="support-area-input"/>
                     <input type="tel" placeholder="Контактний телефон" className="support-area-input"/>
                     <input type="text" placeholder="Повідомлення" className="support-area-input"/>
-                    <button className="boxes-information-button gradient-button small-text">НАДІСЛАТИ</button>
+                    <button className="boxes-information-button gradient-button small-text" onClick={() => submitSupportArea()}>НАДІСЛАТИ</button>
                 </div>
             </div>
         </div>
