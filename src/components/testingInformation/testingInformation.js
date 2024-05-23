@@ -12,7 +12,7 @@ const TestingInformation = () => {
         <div className="testing-information-boxes-wrapper">
             <div className="testing-information-boxes-title subtitle-text">Мета тестування</div>
             <div className="testing-information-boxes-container">
-                <div class="testing-information-boxes-item">
+                <div className="testing-information-boxes-item">
                     <img src={smallBackgroundImg} alt="" className="testing-information-boxes-backgound-img"/>
                     <img src={solarSettingsBold} alt="" className="testing-information-boxes-img"/>
                     <div className="testing-information-boxes-text small-text">Визначте всі недоліки безпеки, вразливості системи та ризики для продуктивності</div>

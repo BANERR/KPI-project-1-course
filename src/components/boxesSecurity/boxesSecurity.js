@@ -18,9 +18,9 @@ const BoxesSecurity = ({boxesData, title}) =>{
                 <div className="boxes-security-title subtitle-text">{title}</div>
                 <div className="boxes-security-items">
                     {
-                        boxesData.map((box)=>{
+                        boxesData.map((box, index)=>{
                             return(
-                                <div className="boxes-security-item">
+                                <div className="boxes-security-item" key={`boxes-security-item-${index}`}>
                                     <img src={smallBackgroundImg} alt="" className="boxes-security-item-background-img"/>
                                     <img src={box.image} alt="" className="boxes-security-item-img"/>
                                     <div className="boxes-security-item-title small-text">{box.title}</div>

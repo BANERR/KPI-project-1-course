@@ -22,8 +22,8 @@ const BigInformation = ({image, title, textList}) => {
                 <img src={image} alt="" className="big-information-img"/>
                 <div className="big-information-text-container small-text">
                   {
-                    textList.map((text) => {
-                      return <div className="big-information-text">{text}</div>
+                    textList.map((text, index) => {
+                      return <div className="big-information-text" key={`big-information-text-${index}`}>{text}</div>
                     })
                   } 
                 </div>

@@ -12,11 +12,12 @@ const AnalyzesInformation = ({image, title, textList}) => {
                 <div className="analyzes-information-text-container" style={{alignItems: image ? 'left' : 'center'}}>
                     <div className="analyzes-information-title subtitle-text" style={{textAlign: image ? 'left' : 'center'}}>{title}</div>
                     {
-                        textList.map((text) => {
+                        textList.map((text, index) => {
                             return (
                                 <div 
                                     className="analyzes-information-text big-information-text small-text" 
-                                    style={{textAlign: image ? 'left' : 'center'}}>
+                                    style={{textAlign: image ? 'left' : 'center'}}
+                                    key={`analyzes-information-text-${index}`}>
                                     {text}
                                 </div>
                             )
